@@ -1,3 +1,4 @@
+import { User } from './../../../Neopolis/src/app/User';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Neo';
+  user: User = new User()
+
+  addUser(){
+    console.log(this.user.nom);
+
+  }
 }
